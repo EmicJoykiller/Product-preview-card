@@ -22,6 +22,7 @@
     padding: 0;
   }
   
+  
   .product {
     display: flex;
     flex-direction: column;
@@ -107,4 +108,40 @@
     margin-left: -1.25rem; /* -20px = -1.25rem */
     font-family: "Montserrat", system-ui;
   }
+  .img .desktop-img{
+    display: none;
+  }
   
+@media (min-width:768px){
+    .product {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        max-width: 60rem;
+        height: auto;
+    }
+
+    .img img {
+        width: 400px ;
+        height: 600px;
+        border-radius: 10px 0px 0px 10px;
+        background-image: url(images/image-product-desktop.jpg);
+        
+      }
+
+      .details {
+        gap: 1.5rem ;
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 0px 10px 10px 0px;
+      }
+
+      .img .mobile-img{
+        display: none;
+      }
+      .img .desktop-img{
+        display:grid;
+      }
+}
