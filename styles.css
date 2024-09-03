@@ -20,6 +20,7 @@ html {
   background-color: var(--Cream);
   width: 100vw;
   height: 100vh;
+  padding: 0 auto;
   margin: 0 auto;
   display: flex;
   justify-content: center;
