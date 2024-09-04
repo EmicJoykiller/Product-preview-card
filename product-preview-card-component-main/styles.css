@@ -1,0 +1,152 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Root Variables */
+:root {
+  --white: #FFFFFF;
+  --cream: #F2EAE2;
+  --aurometal-saurus: #6C7289;
+  --deep-aquamarine: #3D8168;
+  --deep-aquamarine-hover: #1A4032;
+  --gunmetal: #1C232B;
+  --12px: 0.75rem;
+  --14px: 0.875rem;
+  --16px: 1rem; 
+  --24px: 1.5rem;
+  --32px: 2rem;
+}
+
+/* Base Styles */
+body {
+  color: var(--aurometal-saurus);
+  background-color: var(--cream);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  min-height: 100vh;
+  padding: 78px 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+}
+
+main {
+  background-color: var(--white);
+  width: 21.438rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Typography */
+.display-text {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: var(--32px);
+  line-height: 1;
+  margin-block-start: var(--12px);
+  margin-block-end: var(--16px);
+}
+
+.overline-text {
+  font-size: var(--12px);
+  letter-spacing: 5px;
+}
+
+.body-text {
+  font-size: var(--14px);
+  line-height: 1.65;
+}
+
+.span-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: var(--aurometal-saurus);
+  font-weight: 500;
+  text-decoration: line-through;
+  line-height: 1.77;
+}
+
+/* Layout */
+header {
+  height: 240px;
+}
+
+header img {
+  max-inline-size: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  margin-block-start: 24px;
+  margin-block-end: 20px;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  background-color: var(--deep-aquamarine);
+  border: 0;
+  color: var(--white);
+  font-size: var(--14px);
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  padding: 15px 0;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: var(--deep-aquamarine-hover);
+  cursor: pointer;
+}
+
+button img {
+  display: inline-block;
+  margin-inline-end: 12px;
+}
+
+/* Responsive Design */
+@media (min-width: 48em) {
+  .display-text {
+    margin: 20px 0 var(--24px);
+  }
+
+  body {
+    padding: 0;
+    justify-content: center;
+  }
+
+  main {
+    flex-direction: row;
+    width: 37.5rem;
+  }
+
+  header,
+  .card-body {
+    width: 50%;
+    height: 28.125rem;
+  }
+
+  header img {
+    border-radius: 10px 0 0 10px;
+    object-fit: fill;
+  }
+
+  .card-body {
+    padding: 2rem;
+  }
+
+  .price {
+    margin-block-start: 29px;
+    margin-block-end: 30px;
+  }
+}
