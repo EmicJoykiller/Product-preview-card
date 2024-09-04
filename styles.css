@@ -111,6 +111,10 @@
   .img .desktop-img{
     display: none;
   }
+
+  button img{
+    margin-inline-end: 14px;
+  }
   
 @media (min-width:768px){
     .product {
